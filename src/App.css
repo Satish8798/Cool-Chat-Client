@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
+
+.App{
   min-height: 100vh;
   display: flex;
+  background: linear-gradient(to right,skyblue, lightgreen,skyblue);
+  font-family: 'Kanit', sans-serif;
+}
+
+.app-title{
+  background: linear-gradient(to right,lightgreen,skyblue,lightgreen);
+  border: 1px solid black;
+  border-radius: 10px;
+  color: black;
+  text-shadow: 2px 2px white;
+}
+
+.registeration-form-container{
+  background-color: #ffffff7a;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.my-chats{
+  width: 100%;
+  background-color: #ffffff7a;
+}
+
+.my-chats-selected{
+  display: none;
+  background-color: #ffffff7a;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+.chat-box{
+  display: none;
+  background-color: #ffffff7a;
+
+}
+
+.chat-box-selected{
+  width: 100%;
+  background-color: #ffffff7a;
+}
+
+.messages{
+  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width:768px) {
+  .my-chats{
+    width: 25%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .my-chats-selected{
+    display: flex;
+    width: 25%
+  }
+
+  .chat-box{
+    display: flex;
+    width: 75%;
+  }
+  
+  .chat-box-selected{
+    width: 75%;
   }
 }
