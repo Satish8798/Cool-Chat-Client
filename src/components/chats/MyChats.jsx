@@ -4,7 +4,6 @@ import {  toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { ChatState } from "../../Context/ChatProvider";
 import GroupAddIcon from "@mui/icons-material/GroupAdd";
-import { getSender } from "../../config/ChatLogics";
 import GroupChatModal from "../Others/GroupChatModal";
 import MyChatItem from "../Others/MyChatItem";
 
