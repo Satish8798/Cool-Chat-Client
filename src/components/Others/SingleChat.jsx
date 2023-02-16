@@ -12,7 +12,7 @@ import { toast } from "react-toastify";
 import ScrollableChat from "../chats/ScrollableChat";
 import io from "socket.io-client";
 
-const ENDPOINT = "http://localhost:8000";
+const ENDPOINT = "https://cool-chat-server.onrender.com";
 let socket, selectedChatCompare;
 
 function SingleChat({ setFetchAgain, fetchAgain }) {
@@ -62,7 +62,7 @@ function SingleChat({ setFetchAgain, fetchAgain }) {
       setNewMessage("");
 
       const { data } = await axios.post(
-        "http://localhost:8000/message",
+        "https://cool-chat-server.onrender.com/message",
         {
           content: newMessage,
           chatId: selectedChat._id,
@@ -91,7 +91,7 @@ function SingleChat({ setFetchAgain, fetchAgain }) {
       };
 
       const { data } = await axios.get(
-        "http://localhost:8000/message/" + selectedChat._id,
+        "https://cool-chat-server.onrender.com/message/" + selectedChat._id,
         config
       );
 

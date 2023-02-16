@@ -23,7 +23,7 @@ function MyChats({fetchAgain}) {
         },
       };
 
-      const { data } = await axios.get("http://localhost:8000/chat", config);
+      const { data } = await axios.get("https://cool-chat-server.onrender.com/chat", config);
       
       setChats(data);
     } catch (error) {

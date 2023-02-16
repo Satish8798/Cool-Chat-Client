@@ -56,7 +56,7 @@ function UpdateGroupChat({ fetchAgain, setFetchAgain, children, fetchMessages })
       };
 
       const { data } = await axios.put(
-        "http://localhost:8000/chat/group/remove",
+        "https://cool-chat-server.onrender.com/chat/group/remove",
         {
           chatId: selectedChat._id,
           userId: user1._id,
@@ -90,7 +90,7 @@ function UpdateGroupChat({ fetchAgain, setFetchAgain, children, fetchMessages })
       };
 
       const { data } = await axios.put(
-        "http://localhost:8000/chat/group/rename",
+        "https://cool-chat-server.onrender.com/chat/group/rename",
         {
           chatId: selectedChat._id,
           chatName: groupChatName,
@@ -130,7 +130,7 @@ function UpdateGroupChat({ fetchAgain, setFetchAgain, children, fetchMessages })
       };
 
       const { data } = await axios.put(
-        "http://localhost:8000/chat/group/add",
+        "https://cool-chat-server.onrender.com/chat/group/add",
         {
           chatId: selectedChat._id,
           userId: user1._id,
@@ -165,7 +165,7 @@ function UpdateGroupChat({ fetchAgain, setFetchAgain, children, fetchMessages })
       };
 
       const { data } = await axios.get(
-        "http://localhost:8000/user?search=" + search,
+        "https://cool-chat-server.onrender.com/user?search=" + search,
         config
       );
 

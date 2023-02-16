@@ -28,7 +28,7 @@ function Login() {
     }
 
     try{
-      const { data } = await axios.post('http://localhost:8000/user/login',{
+      const { data } = await axios.post('https://cool-chat-server.onrender.com/user/login',{
         email,password
       },config);
 

@@ -48,7 +48,7 @@ function SideDrawer() {
       };
 
       const { data } = await axios.post(
-        "http://localhost:8000/chat",
+        "https://cool-chat-server.onrender.com/chat",
         { userId },
         config
       );
@@ -81,7 +81,7 @@ function SideDrawer() {
       };
 
       const { data } = await axios.get(
-        "http://localhost:8000/user?search=" + search,
+        "https://cool-chat-server.onrender.com/user?search=" + search,
         config
       );
       setLoading(false);

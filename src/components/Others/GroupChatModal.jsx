@@ -55,7 +55,7 @@ function GroupChatModal({ children }) {
       };
 
       const { data } = await axios.get(
-        "http://localhost:8000/user?search=" + search,
+        "https://cool-chat-server.onrender.com/user?search=" + search,
         config
       );
 
@@ -83,7 +83,7 @@ return;
         }
       }
 
-      const {data} = await axios.post('http://localhost:8000/chat/group/create',{
+      const {data} = await axios.post('https://cool-chat-server.onrender.com/chat/group/create',{
         name: groupChatName,
         users: JSON.stringify(selectedUsers.map(u=>u._id))
       },config);

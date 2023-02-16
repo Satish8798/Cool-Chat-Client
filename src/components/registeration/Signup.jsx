@@ -52,7 +52,7 @@ function Signup() {
         },
       };
 
-      const {data} = await axios.post('http://localhost:8000/user/signup',{
+      const {data} = await axios.post('https://cool-chat-server.onrender.com/user/signup',{
         name,email,password,confirmPassword,pic
       },config);
 
