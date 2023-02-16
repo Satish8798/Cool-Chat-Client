@@ -58,11 +58,10 @@ function Signup() {
 
       toast("Signup Successful");
 
-      localStorage.setItem("userInfo",JSON.stringify(data));
-      setUser(data.user);
-      navigateTo('/chats')
-
+      localStorage.setItem('userInfo',JSON.stringify(data));
       setLoading(false);
+      setUser(data.user);
+      navigateTo('/chats');
     } catch (error) {
       toast(error.response.data);
       setLoading(false);

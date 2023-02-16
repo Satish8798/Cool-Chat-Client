@@ -99,6 +99,7 @@ function SingleChat({ setFetchAgain, fetchAgain }) {
 
       setLoading(false);
       socket.emit("join chat", selectedChat._id);
+      
     } catch (error) {
       toast("failed to load messages");
       setLoading(false);
