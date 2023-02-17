@@ -18,6 +18,7 @@ const ChatProvider = ({ children }) => {
       navigateTo("/");
     } else {
       setUser(userInfo.user);
+      navigateTo('/chats')
     }
   }, []);
 
