@@ -77,6 +77,18 @@ function Login() {
       >
         {loading ? "Loading..." : "LOG IN"}
       </Button>
+      <Button
+        type="button"
+        variant="contained"
+        color="success"
+        sx={{ marginTop: "10px", width: "80%" }}
+        onClick={()=>{
+          setEmail("guestuser@gmail.com");
+          setPassword("guestuser123");
+        }}
+      >
+        Login as Guest User
+      </Button>
       <ToastContainer/>
     </form>
   );
