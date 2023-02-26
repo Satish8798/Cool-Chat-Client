@@ -185,7 +185,7 @@ function SingleChat({ setFetchAgain, fetchAgain }) {
                 <ScrollableChat messages={messages} />
               </div>
             )}
-            { isTyping?  <div>Loading ...</div>: <></> }
+            { isTyping?  <div>Typing ...</div>: <></> }
             <form
               onSubmit={sendMessage}
               className="d-flex align-items-center mt-4"
