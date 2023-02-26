@@ -83,8 +83,8 @@ function Login() {
         color="success"
         sx={{ marginTop: "10px", width: "80%" }}
         onClick={()=>{
-          setEmail("guestuser@gmail.com");
-          setPassword("guestuser123");
+          setEmail("guest@gmail.com");
+          setPassword("Guest@123#123");
         }}
       >
         Login as Guest User
